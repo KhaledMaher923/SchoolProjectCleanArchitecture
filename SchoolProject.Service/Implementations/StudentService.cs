@@ -19,9 +19,9 @@ namespace SchoolProject.Service.Implementations
         }
         #endregion
         #region Handle Functions
-        public async Task<List<Student>> GetStudentsAsync()
+        public async Task<List<Student>> GetStudentsListAsync()
         {
-            return await _studentRepository.GetStudentsAsync();
+            return await _studentRepository.GetStudentsListAsync();
         }
         #endregion
     }

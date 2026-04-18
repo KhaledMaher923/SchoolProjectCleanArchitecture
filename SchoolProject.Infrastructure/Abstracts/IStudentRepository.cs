@@ -7,6 +7,6 @@ namespace SchoolProject.Infrastructure.Abstracts
 {
     public interface IStudentRepository
     {
-        public Task<List<Student>> GetStudentsAsync();
+        public Task<List<Student>> GetStudentsListAsync();
     }
 }
