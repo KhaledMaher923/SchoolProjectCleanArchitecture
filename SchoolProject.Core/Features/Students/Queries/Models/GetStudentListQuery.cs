@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using SchoolProject.Core.Bases;
 using SchoolProject.Core.Features.Students.Queries.Results;
 using SchoolProject.Data.Entities;
 using System;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace SchoolProject.Core.Features.Students.Queries.Models
 {
-    public class GetStudentListQuery:IRequest<List<GetStudentListResponse>>
+    public class GetStudentListQuery:IRequest<Response<List<GetStudentListResponse>>>
     {
 
     }
