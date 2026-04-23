@@ -7,12 +7,12 @@ using System.Text;
 
 namespace SchoolProject.Core.Mapping.Students
 {
-    public partial class StudentProfile : Profile
+    public partial class StudentProfile
     {
-        public StudentProfile()
+        public void GetStudentByIDMapping()
         {
-            GetStudentListMapping();
-            GetStudentByIDMapping();
+            CreateMap<Student, GetSingleStudentResponse>()
+                .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.Department.DName));   
         }
     }
 }
